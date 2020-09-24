@@ -8,7 +8,7 @@ $value = "World";
 
 try {
     //соединение с БД
-    $databaseTest = new PDO('mysql:host=database;dbname=mydb', 'root', 'root');
+    $databaseTest = new PDO('mysql:host=database;dbname=mydb', 'myuser', '123456');
     $databaseTest->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
  
     //получаем данные
